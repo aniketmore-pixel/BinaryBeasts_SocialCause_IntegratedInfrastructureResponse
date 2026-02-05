@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
-import { Camera, MapPin, CheckCircle, Clock, AlertTriangle, ChevronRight, Home, User, Bell, Droplet, Zap, Wind, Award, Truck } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Camera, MapPin, CheckCircle, Loader, FileText, Clock, AlertTriangle, ChevronRight, Home, User, Bell, Droplet, Zap, Wind, Award, Truck } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import { useNavigate } from 'react-router-dom';
+import MyReportsWidget from '../components/MyReportsWidget';
+
 
 const CitizenDashboard = () => {
     const [activeTab, setActiveTab] = useState('home');
     const [isReporting, setIsReporting] = useState(false);
     const [reportStep, setReportStep] = useState('camera'); // 'camera', 'analyzing', 'success'
     const [newReport, setNewReport] = useState(null);
+    const navigate = useNavigate();
+
 
     React.useEffect(() => {
         if (reportStep === 'analyzing') {
@@ -98,7 +103,11 @@ const CitizenDashboard = () => {
                 </div>
 
                 {/* Report Action */}
-                <div onClick={() => setIsReporting(true)} className="bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border border-cyan-500/20 rounded-2xl p-6 mb-8 text-center relative overflow-hidden group cursor-pointer transition-all hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]">
+                <div
+  onClick={() => navigate('/report-issue')}
+  className="bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border border-cyan-500/20 rounded-2xl p-6 mb-8 text-center relative overflow-hidden group cursor-pointer transition-all hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]"
+>
+
                     <div className="absolute inset-0 bg-cyan-400/5 group-hover:bg-cyan-400/10 transition-colors"></div>
                     <div className="relative z-10">
                         <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-[0_0_20px_rgba(6,182,212,0.5)] group-hover:scale-110 transition-transform animate-pulse-slow">
@@ -206,79 +215,7 @@ const CitizenDashboard = () => {
                     <button className="text-xs text-cyan-400 hover:text-cyan-300">View All</button>
                 </div>
 
-                <div className="space-y-4 mb-8">
-                    {/* New Report (Dynamic) */}
-                    {newReport && (
-                        <div className="glass-panel p-4 rounded-xl border border-white/5 flex gap-4 items-center relative overflow-hidden animate-slide-in-down bg-white/5 border-l-2 border-l-cyan-400">
-                            <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0 relative">
-                                <Camera size={20} className="text-cyan-400" />
-                            </div>
-                            <div className="flex-1">
-                                <div className="flex justify-between items-start mb-1">
-                                    <h4 className="font-semibold text-white text-sm">{newReport.title}</h4>
-                                    <span className="text-[10px] bg-cyan-500/20 text-cyan-400 px-2 py-0.5 rounded-full border border-cyan-500/20 animate-pulse">{newReport.status}</span>
-                                </div>
-                                <p className="text-xs text-gray-500 mb-1">Reported {newReport.date} • {newReport.pts} pts</p>
-                                <div className="flex items-center gap-1 text-[10px] text-gray-400">
-                                    Simulating Admin Protocol...
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Item 1 */}
-                    <div className="glass-panel p-4 rounded-xl border border-white/5 flex gap-4 items-center relative overflow-hidden">
-                        <div className="absolute left-0 top-0 bottom-0 w-1 bg-green-500"></div>
-                        <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=150&h=150" alt="Pothole" className="w-full h-full object-cover rounded-lg opacity-80" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex justify-between items-start mb-1">
-                                <h4 className="font-semibold text-white text-sm">Pothole on 5th Ave</h4>
-                                <span className="text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full border border-green-500/20">RESOLVED</span>
-                            </div>
-                            <p className="text-xs text-gray-500 mb-1">Reported 2 days ago • +50 pts</p>
-                            <div className="flex items-center gap-1 text-[10px] text-cyan-400">
-                                <CheckCircle size={10} /> Verified by AI
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Item 2 */}
-                    <div className="glass-panel p-4 rounded-xl border border-white/5 flex gap-4 items-center relative overflow-hidden">
-                        <div className="absolute left-0 top-0 bottom-0 w-1 bg-yellow-500"></div>
-                        <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0 relative overflow-hidden">
-                            <div className="absolute inset-0 bg-yellow-500/10"></div>
-                            <AlertTriangle size={20} className="text-yellow-500" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex justify-between items-start mb-1">
-                                <h4 className="font-semibold text-white text-sm">Street Light Malfunction</h4>
-                                <span className="text-[10px] bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded-full border border-yellow-500/20">IN PROGRESS</span>
-                            </div>
-                            <p className="text-xs text-gray-500 mb-1">Reported today • +20 pts pending</p>
-                            <div className="flex items-center gap-1 text-[10px] text-yellow-500">
-                                <Clock size={10} /> Crew Dispatched
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Item 3 */}
-                    <div className="glass-panel p-4 rounded-xl border border-white/5 flex gap-4 items-center">
-                        <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0 relative overflow-hidden">
-                            <MapPin size={20} className="text-gray-500" />
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex justify-between items-start mb-1">
-                                <h4 className="font-semibold text-gray-300 text-sm">Fallen Tree Branch</h4>
-                            </div>
-                            <p className="text-xs text-gray-500 mb-1">Park Road • 1 week ago</p>
-                            <div className="flex items-center gap-1 text-[10px] text-gray-500">
-                                Closed
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <MyReportsWidget />
 
                 {/* Map Widget */}
                 <div className="mt-8">

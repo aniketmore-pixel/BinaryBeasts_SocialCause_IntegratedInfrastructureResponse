@@ -10,12 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.94.0",
     "framer-motion": "^12.31.0",
+    "groq-sdk": "^0.37.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.1.0",
+    "jwt-decode": "^4.0.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.563.0",
+    "mapbox-gl": "^3.18.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-leaflet": "^5.0.0",
+    "react-map-gl": "^7.1.9",
     "react-router-dom": "^7.13.0",
     "recharts": "^3.7.0"
   },
