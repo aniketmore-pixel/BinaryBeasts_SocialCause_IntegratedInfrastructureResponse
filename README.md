@@ -1,7 +1,6 @@
 # SheherSetu: Integrated Infrastructure Response Platform
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/aniketmore-pixel/BinaryBeasts_SocialCause_IntegratedInfrastructureResponse)
 
-SheherSetu (formerly UrbanIQ) is a next-generation smart city command center designed to revolutionize urban infrastructure management. By integrating AI-powered analysis, real-time IoT simulations, and citizen reporting, the platform provides officials with a comprehensive digital twin to monitor, predict, and respond to infrastructure issues proactively.
+SheherSetu is a next-generation smart city command center designed to revolutionize urban infrastructure management. By integrating AI-powered analysis, real-time IoT simulations, and citizen reporting, the platform provides officials with a comprehensive digital twin to monitor, predict, and respond to infrastructure issues proactively.
 
 The system features dedicated portals for both city officials and citizens, creating a collaborative ecosystem for maintaining and improving urban infrastructure.
 
