@@ -4,6 +4,22 @@ SheherSetu is a next-generation smart city command center designed to revolution
 
 The system features dedicated portals for both city officials and citizens, creating a collaborative ecosystem for maintaining and improving urban infrastructure.
 
+## Screenshots
+<img width="1920" height="1080" alt="Screenshot (225)" src="https://github.com/user-attachments/assets/ccd9169a-033b-470d-92ad-bfbe7d1a4101" />
+<img width="1920" height="1080" alt="Screenshot (228)" src="https://github.com/user-attachments/assets/cf8e76a7-324c-443c-a204-665991ea3a8a" />
+<img width="1920" height="1080" alt="Screenshot (229)" src="https://github.com/user-attachments/assets/97a0c55a-fc30-4a43-8634-63a895943e31" />
+<img width="1920" height="1080" alt="Screenshot (230)" src="https://github.com/user-attachments/assets/15274e29-d48c-4c3b-82d3-207277144be7" />
+<img width="1920" height="1080" alt="Screenshot (226)" src="https://github.com/user-attachments/assets/b7980c74-2f6c-4b71-b72a-296cc742303a" />
+<img width="1920" height="1080" alt="Screenshot (231)" src="https://github.com/user-attachments/assets/4cc6d795-85d0-4907-8f13-90f0c15ecfae" />
+<img width="1920" height="1080" alt="Screenshot (232)" src="https://github.com/user-attachments/assets/4530b44f-7e82-496e-b5a4-f16d1cf77cc0" />
+<img width="1920" height="1080" alt="Screenshot (233)" src="https://github.com/user-attachments/assets/2b1861b8-9ee6-4463-9c0d-b7f7fff6a332" />
+<img width="1920" height="1080" alt="Screenshot (234)" src="https://github.com/user-attachments/assets/c87e9fd3-945b-440a-b78f-4facf5f7385b" />
+<img width="1920" height="1080" alt="Screenshot (235)" src="https://github.com/user-attachments/assets/d0cd280f-988b-4274-82ce-e6a63a213c82" />
+<img width="1920" height="1080" alt="Screenshot (236)" src="https://github.com/user-attachments/assets/d97124bf-2b4c-4ecc-82d3-e8b7af41c10b" />
+<img width="1920" height="1080" alt="Screenshot (237)" src="https://github.com/user-attachments/assets/876b2188-d71a-49f4-b3fe-70969d014ca9" />
+<img width="1920" height="1080" alt="Screenshot (238)" src="https://github.com/user-attachments/assets/89419b66-9296-4def-9434-ab6608403d0a" />
+
+
 ## Key Features
 
 -   **Unified Command Center**: A centralized dashboard for officials featuring analytics on city health, budget utilization, and incident tracking, providing a holistic view of the city's operational status.
