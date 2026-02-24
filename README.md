@@ -173,7 +173,6 @@ Once all services are running, you can access the platform through the frontend 
 -   **Login as an Official/Admin**: Use credentials for a user with the `OFFICIAL` or `ADMIN` role in your Supabase `users` table. You will be redirected to the main analytics dashboard at `/analytics`.
 
 -   **Login as a Citizen**: Register a new account or use credentials for a user with the `USER` role. You will be redirected to the citizen portal at `/citizen-portal` where you can report issues.# SheherSetu: Integrated Infrastructure Response Platform
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/aniketmore-pixel/BinaryBeasts_SocialCause_IntegratedInfrastructureResponse)
 
 SheherSetu (formerly UrbanIQ) is a next-generation smart city command center designed to revolutionize urban infrastructure management. By integrating AI-powered analysis, real-time IoT simulations, and citizen reporting, the platform provides officials with a comprehensive digital twin to monitor, predict, and respond to infrastructure issues proactively.
 
